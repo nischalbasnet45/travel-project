@@ -1,9 +1,18 @@
 import React from 'react'
 import './navbar.css'
+import {SiYourtraveldottv} from 'react-icons/si'
 
 const navbar = () => {
   return (
-    <div>Navbar</div>
+    <section className='navBarSection'>
+        <div className="header">
+            <div className="logoDiv">
+                <a href="#" className="logo">
+                    <h1><SiYourtraveldottv className="icon"/></h1>
+                </a>
+            </div>
+        </div>
+    </section>
   )
 }
 
