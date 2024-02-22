@@ -45,7 +45,7 @@
                 padding: 1rem;
                 width: 100%;
                 top: 0;
-                left: 0;
+                left: -500%;
                 box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
                 transition: 0.5s ease;
                 z-index: 1000;
@@ -99,6 +99,30 @@
                             }
                         }
                     }
+                }
+
+                .closeNavbar{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--PrimaryColor);
+                    &:hover .icon{
+                        color: var(--HoverColor);
+                    }
+                }
+            }
+
+            .activeNavbar{
+                left: 0;
+            }
+        }
+
+        .toggleNavbar{
+            .icon{
+                font-size: 25px;
+                color: var(--whiteColor);
+                &:hover{
+                    color: var(--PrimaryColor);
                 }
             }
         }
