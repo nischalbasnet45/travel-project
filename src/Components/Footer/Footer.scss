@@ -1,0 +1,28 @@
+/* Colors */
+:root {
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    // --boxShadow: 0 2px 8px 2px rgba(178,178,178,0.334);
+  }
+
+
+.footer{
+    .box{
+        background-color: var(--blackColor);
+        height: 2rem;
+
+        p{
+            color: var(--whiteColor);
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 0.5rem;
+        }
+    }
+}

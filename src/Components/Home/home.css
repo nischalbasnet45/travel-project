@@ -12,8 +12,8 @@
 }
 
 .home {
-  height: 110vh;
-  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("/Users/nischalbasnet/Documents/travel-project/Assets/bgImage.jpg");
+  height: 80vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("/Users/nischalbasnet/Documents/travel-project/src/Assets/bgImage.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,4 +94,23 @@
   padding: 0.6rem 1.5rem;
   color: var(--whiteColor);
   font-weight: 600;
+}
+
+@media screen and (min-width: 480px) {
+  .home .secConatiner .homeCard {
+    bottom: -100px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1 fr);
+  }
+  .home .secConatiner .homeCard btn {
+    transform: translateY(15px);
+  }
+}
+@media screen and (min-width: 556) {
+  .home .secConatiner .homeText .title {
+    font-size: 2.5rem;
+  }
+  .home .secConatiner .subTitle {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=home.css.map */

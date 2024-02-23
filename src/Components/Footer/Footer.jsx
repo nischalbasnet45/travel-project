@@ -3,8 +3,12 @@ import './footer.css'
 
 const footer = () => {
   return (
-    <div>Footer</div>
+    <section className="footer">
+      <div className="box">
+        <p>All Rights Reserved © 2024</p>
+      </div>
+    </section>
   )
 }
 
-export default footer
+export default footer;
