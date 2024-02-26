@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './navbar.scss';
+import { Link } from 'react-router-dom'
 import {SiYourtraveldottv} from 'react-icons/si';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb';
@@ -29,7 +30,7 @@ const Navbar = () => {
     <section className='navBarSection'>
         <div className={transparent}>
             <div className="logoDiv">
-                <a href="#" className="logo">
+                <a href="/" className="logo">
                     <h1 className='flex'><SiYourtraveldottv className="icon"/>
                     Dot
                     </h1>
@@ -39,27 +40,27 @@ const Navbar = () => {
             <div className={active}>
               <ul className="navLists flex">
                 <li className="navItem">
-                  <a href="#" className="navLink">Home</a>
+                  <a href="/" className="navLink">Home</a>
                 </li>
                 <li className="navItem">
-                  <a href="#" className="navLink">Products</a>
+                  <a href="/" className="navLink">Products</a>
                 </li>
                 <li className="navItem">
-                  <a href="#" className="navLink">Resources</a>
+                  <a href="/" className="navLink">Resources</a>
                 </li>
                 <li className="navItem">
-                  <a href="#" className="navLink">Contacts</a>
+                  <a href="/" className="navLink">Contacts</a>
                 </li>
                 <li className="navItem">
-                  <a href="/blog" className="navLink">Blog</a>
+                  <a href="/" className="navLink">Blog</a>
                 </li>
 
                 <div className="headerBtns flex">
-                  <button className='btn loginBtn'>
-                    <a href="#">Login</a>
+                  <button onClick={Link} className='btn loginBtn'>
+                      <a href="/login">Login</a>
                   </button>
                   <button className='btn'>
-                    <a href="#">Sign Up</a>
+                    <a href="/">Sign Up</a>
                   </button>
                 </div>
               </ul>

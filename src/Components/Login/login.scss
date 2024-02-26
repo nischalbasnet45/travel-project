@@ -1,0 +1,89 @@
+// login.scss
+:root {
+    --primaryColor: hsl(26, 93%, 50%);
+    --hoverColor: hsl(26, 90%, 42%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+  }
+  
+  .login-page {
+    background-color: var(--primaryColor);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+  
+    h2 {
+      color: var(--whiteColor);
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          color: var(--whiteColor);
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+  
+        input {
+          padding: 12px;
+          border: 1px solid var(--whiteColor);
+          border-radius: 4px;
+          background-color: var(--inputColor);
+          color: var(--blackColor);
+          font-size: 16px;
+          transition: border-color 0.3s ease;
+  
+          &:focus {
+            outline: none;
+            border-color: var(--primaryColor);
+          }
+        }
+      }
+  
+      button {
+        padding: 15px;
+        background-color: var(--primaryColor);
+        color: var(--whiteColor);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: var(--hoverColor);
+        }
+      }
+  
+      p {
+        color: var(--whiteColor);
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: var(--hoverColor);
+        }
+      }
+    }
+  }
+  
